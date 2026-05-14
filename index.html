@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Semester VI SGPA Calculator</h2>
+
+    <button id="loginBtn">Login with College Email</button>
+
+    <p id="userInfo"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Theory Grade</th>
+                <th>Practical Grade</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <p class="note">
+        * For MDM: If practical isn't conducted separately,
+        choose same grade as theory.
+    </p>
+
+    <button id="calculateBtn">Calculate SGPA</button>
+
+    <button onclick="window.location.href='leaderboard.html'">
+        View Leaderboard
+    </button>
+
+    <div id="result"></div>
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
