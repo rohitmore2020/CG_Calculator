@@ -8,7 +8,8 @@ import { getFirestore } from
 import {
     getAuth,
     GoogleAuthProvider,
-    signInWithPopup
+    signInWithPopup,
+    onAuthStateChanged
 } from 
 "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
@@ -39,5 +40,6 @@ export {
     db,
     auth,
     provider,
-    signInWithPopup
+    signInWithPopup,
+    onAuthStateChanged
 };
