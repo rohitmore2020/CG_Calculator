@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298, #112240);
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container{
+    width:900px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    background:#2a5298;
+    color:white;
+}
+
+button{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#2a5298;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+select{
+    padding:8px;
+}
+
+.note{
+    margin-top:10px;
+    text-align:center;
+}
+
+#result{
+    margin-top:20px;
+    text-align:center;
+    font-size:22px;
+    color:green;
+}
+
+#userInfo{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Login Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-card {
+    background: white;
+    width: 450px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid #dadce0;
+}
+
+.login-header h2 {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    color: #202124;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #5f6368;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.google-btn {
+    background-color: #fff;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    max-width: 300px;
+}
+
+.google-btn:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+
+.error-msg {
+    color: #d93025;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fce8e6;
+    border-radius: 4px;
+}
+
+.user-info {
+    font-weight: bold;
+}
+
+/* Transitions */
+.fade-out {
+    opacity: 0 !important;
+    transform: scale(0.95) !important;
+    pointer-events: none;
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.login-container {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#calculatorSection {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.google-btn.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+}
